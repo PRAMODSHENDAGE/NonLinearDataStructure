@@ -1,7 +1,7 @@
 ﻿using NonLinearDataStructureProblem;
 
-MyMapNode<string, int> hash = new MyMapNode<string, int>(6);
-string words = "to be or not to be";
+MyMapNode<string, int> hash = new MyMapNode<string, int>(19);
+string words = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 string[] arr = words.Split(' ');
 LinkedList<string> checkForDuplication = new LinkedList<string>();
    foreach (string element in arr)
@@ -25,5 +25,5 @@ LinkedList<string> checkForDuplication = new LinkedList<string>();
        checkForDuplication.AddLast(element);
        hash.Add(element, count);
    }
-   Console.WriteLine("Frequency of the word");
+   Console.WriteLine("Frequency Of The Words");
    hash.Display();
